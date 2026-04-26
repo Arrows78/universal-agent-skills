@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "name": "universal-agent-skills",
+  "description": "Portable Agent Skills in SKILL.md format",
+  "package": "universal-agent-skills",
+  "format": "skill-md",
+  "source_of_truth": "skills",
+  "skill_count": 6,
+  "skills": [
+    {
+      "name": "conventional-commit",
+      "canonical_path": "skills/conventional-commit/SKILL.md",
+      "claude_project_path": ".claude/skills/conventional-commit/SKILL.md",
+      "opencode_project_path": ".opencode/skills/conventional-commit/SKILL.md",
+      "cursor_project_path": ".cursor/skills/conventional-commit/SKILL.md",
+      "generic_agent_path": ".agents/skills/conventional-commit/SKILL.md",
+      "description": "Create, review, and improve git commit messages using conventional commits"
+    },
+    {
+      "name": "functional-spec-writer",
+      "canonical_path": "skills/functional-spec-writer/SKILL.md",
+      "claude_project_path": ".claude/skills/functional-spec-writer/SKILL.md",
+      "opencode_project_path": ".opencode/skills/functional-spec-writer/SKILL.md",
+      "cursor_project_path": ".cursor/skills/functional-spec-writer/SKILL.md",
+      "generic_agent_path": ".agents/skills/functional-spec-writer/SKILL.md",
+      "description": "Write functional specification documentation"
+    },
+    {
+      "name": "issue-tracker",
+      "canonical_path": "skills/issue-tracker/SKILL.md",
+      "claude_project_path": ".claude/skills/issue-tracker/SKILL.md",
+      "opencode_project_path": ".opencode/skills/issue-tracker/SKILL.md",
+      "cursor_project_path": ".cursor/skills/issue-tracker/SKILL.md",
+      "generic_agent_path": ".agents/skills/issue-tracker/SKILL.md",
+      "description": "Draft bug reports and user stories for any issue tracker"
+    },
+    {
+      "name": "prd-writer",
+      "canonical_path": "skills/prd-writer/SKILL.md",
+      "claude_project_path": ".claude/skills/prd-writer/SKILL.md",
+      "opencode_project_path": ".opencode/skills/prd-writer/SKILL.md",
+      "cursor_project_path": ".cursor/skills/prd-writer/SKILL.md",
+      "generic_agent_path": ".agents/skills/prd-writer/SKILL.md",
+      "description": "Write product requirements documents"
+    },
+    {
+      "name": "pull-request",
+      "canonical_path": "skills/pull-request/SKILL.md",
+      "claude_project_path": ".claude/skills/pull-request/SKILL.md",
+      "opencode_project_path": ".opencode/skills/pull-request/SKILL.md",
+      "cursor_project_path": ".cursor/skills/pull-request/SKILL.md",
+      "generic_agent_path": ".agents/skills/pull-request/SKILL.md",
+      "description": "Build and review pull request or merge request descriptions"
+    },
+    {
+      "name": "sprint-announcement",
+      "canonical_path": "skills/sprint-announcement/SKILL.md",
+      "claude_project_path": ".claude/skills/sprint-announcement/SKILL.md",
+      "opencode_project_path": ".opencode/skills/sprint-announcement/SKILL.md",
+      "cursor_project_path": ".cursor/skills/sprint-announcement/SKILL.md",
+      "generic_agent_path": ".agents/skills/sprint-announcement/SKILL.md",
+      "description": "Draft sprint announcements and updates"
+    }
+  ],
+  "intentional_mirrors": [
+    ".claude/skills",
+    ".cursor/skills",
+    ".opencode/skills",
+    ".agents/skills"
+  ],
+  "generated_by": {
+    "sync_script": "scripts/sync-agent-mirrors.sh",
+    "watch_script": "scripts/watch-agent-skills.sh",
+    "git_hook_installer": "scripts/install-git-hooks.sh"
+  },
+  "maintenance": {
+    "edit_only": "skills/<skill-name>/",
+    "manual_sync": "make sync",
+    "watch_sync": "make watch",
+    "git_hook": "make install-hooks"
+  }
+}
