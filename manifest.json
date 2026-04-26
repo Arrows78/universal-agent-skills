@@ -5,7 +5,7 @@
   "package": "universal-agent-skills",
   "format": "skill-md",
   "source_of_truth": "skills",
-  "skill_count": 6,
+  "skill_count": 7,
   "skills": [
     {
       "name": "conventional-commit",
@@ -60,6 +60,15 @@
       "cursor_project_path": ".cursor/skills/sprint-announcement/SKILL.md",
       "generic_agent_path": ".agents/skills/sprint-announcement/SKILL.md",
       "description": "Draft sprint announcements and updates"
+    },
+    {
+      "name": "tracking-plan",
+      "canonical_path": "skills/tracking-plan/SKILL.md",
+      "claude_project_path": ".claude/skills/tracking-plan/SKILL.md",
+      "opencode_project_path": ".opencode/skills/tracking-plan/SKILL.md",
+      "cursor_project_path": ".cursor/skills/tracking-plan/SKILL.md",
+      "generic_agent_path": ".agents/skills/tracking-plan/SKILL.md",
+      "description": "Audit, create, and govern PostHog events and properties using the Nalo tracking plan in Notion"
     }
   ],
   "intentional_mirrors": [
