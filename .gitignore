@@ -1,0 +1,12 @@
+# macOS metadata
+.DS_Store
+._*
+__MACOSX/
+
+# Local editor noise
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
