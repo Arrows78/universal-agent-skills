@@ -10,3 +10,9 @@ __MACOSX/
 # Logs and temporary files
 *.log
 *.tmp
+
+# Agent mirrors
+.cursor/
+.claude/
+.opencode/
+.agents/

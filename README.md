@@ -25,6 +25,7 @@ Mirror folders (auto-generated via `make sync`):
 | pull-request | Build and review pull request or merge request descriptions |
 | prd-writer | Write product requirements documents |
 | sprint-announcement | Draft sprint announcements and updates |
+| tracking-plan | Govern PostHog events and properties (Nalo tracking plan in Notion) |
 
 ## Usage
 
@@ -41,6 +42,18 @@ make install-hooks
 # Clean generated mirrors
 make clean
 ```
+
+## User-wide install (all projects)
+
+After each `make sync` or pre-commit sync, the same skills are **merged per skill name** into the default global directories for Claude Code, Cursor, and OpenCode (only names from this repo are updated; other skills you already have there stay put):
+
+- `~/.claude/skills`
+- `~/.cursor/skills`
+- `~/.config/opencode/skills`
+
+The repo still generates `.agents/skills/` for project-level use; it is not copied under your home directory.
+
+Skipped when `CI` is set. Set `UAS_SKIP_HOME_SYNC=1` to disable writing under your home directory.
 
 ## Maintenance
 

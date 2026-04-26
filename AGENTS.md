@@ -25,3 +25,5 @@ Mirror folders (generated, do not edit manually):
 .cursor/skills/
 .opencode/skills/
 ```
+
+`scripts/sync-agent-mirrors.sh` also merges each skill into `~/.claude/skills`, `~/.cursor/skills`, and `~/.config/opencode/skills` unless `CI` or `UAS_SKIP_HOME_SYNC` is set. Repo mirrors still include `.agents/skills/` (not synced to `$HOME`).
