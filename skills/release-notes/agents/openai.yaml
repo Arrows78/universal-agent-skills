@@ -1,0 +1,3 @@
+interface:
+  display_name: "Release Notes Writer"
+  short_description: "Turn shipped work into customer-facing release notes and changelogs."

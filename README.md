@@ -21,9 +21,11 @@ Mirror folders (auto-generated via `make sync`):
 |-------|-------------|
 | conventional-commit | Create, review, and improve git commit messages using conventional commits |
 | functional-spec-writer | Write functional specification documentation with Mermaid diagrams |
+| incident-postmortem | Write blameless incident postmortems with root cause and action items |
 | issue-tracker | Draft bug reports and user stories for any issue tracker |
+| prd-writer | Write product requirements documents — full PRD, a lightweight one-pager, or a branded PDF export |
 | pull-request | Build and review pull request or merge request descriptions |
-| prd-writer | Write product requirements documents |
+| release-notes | Draft customer-facing release notes and changelog entries |
 | sprint-announcement | Draft sprint announcements and updates |
 | tracking-plan | Govern PostHog events and properties (Nalo tracking plan in Notion) |
 

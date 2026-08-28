@@ -5,7 +5,7 @@
   "package": "universal-agent-skills",
   "format": "skill-md",
   "source_of_truth": "skills",
-  "skill_count": 7,
+  "skill_count": 9,
   "skills": [
     {
       "name": "conventional-commit",
@@ -24,6 +24,15 @@
       "cursor_project_path": ".cursor/skills/functional-spec-writer/SKILL.md",
       "generic_agent_path": ".agents/skills/functional-spec-writer/SKILL.md",
       "description": "Write functional specification documentation"
+    },
+    {
+      "name": "incident-postmortem",
+      "canonical_path": "skills/incident-postmortem/SKILL.md",
+      "claude_project_path": ".claude/skills/incident-postmortem/SKILL.md",
+      "opencode_project_path": ".opencode/skills/incident-postmortem/SKILL.md",
+      "cursor_project_path": ".cursor/skills/incident-postmortem/SKILL.md",
+      "generic_agent_path": ".agents/skills/incident-postmortem/SKILL.md",
+      "description": "Write blameless incident postmortems with root cause and action items"
     },
     {
       "name": "issue-tracker",
@@ -53,13 +62,13 @@
       "description": "Build and review pull request or merge request descriptions"
     },
     {
-      "name": "sprint-announcement",
-      "canonical_path": "skills/sprint-announcement/SKILL.md",
-      "claude_project_path": ".claude/skills/sprint-announcement/SKILL.md",
-      "opencode_project_path": ".opencode/skills/sprint-announcement/SKILL.md",
-      "cursor_project_path": ".cursor/skills/sprint-announcement/SKILL.md",
-      "generic_agent_path": ".agents/skills/sprint-announcement/SKILL.md",
-      "description": "Draft sprint announcements and updates"
+      "name": "release-notes",
+      "canonical_path": "skills/release-notes/SKILL.md",
+      "claude_project_path": ".claude/skills/release-notes/SKILL.md",
+      "opencode_project_path": ".opencode/skills/release-notes/SKILL.md",
+      "cursor_project_path": ".cursor/skills/release-notes/SKILL.md",
+      "generic_agent_path": ".agents/skills/release-notes/SKILL.md",
+      "description": "Draft customer-facing release notes and changelog entries from shipped work"
     },
     {
       "name": "tracking-plan",
@@ -69,6 +78,15 @@
       "cursor_project_path": ".cursor/skills/tracking-plan/SKILL.md",
       "generic_agent_path": ".agents/skills/tracking-plan/SKILL.md",
       "description": "Audit, create, and govern PostHog events and properties using the Nalo tracking plan in Notion"
+    },
+    {
+      "name": "sprint-announcement",
+      "canonical_path": "skills/sprint-announcement/SKILL.md",
+      "claude_project_path": ".claude/skills/sprint-announcement/SKILL.md",
+      "opencode_project_path": ".opencode/skills/sprint-announcement/SKILL.md",
+      "cursor_project_path": ".cursor/skills/sprint-announcement/SKILL.md",
+      "generic_agent_path": ".agents/skills/sprint-announcement/SKILL.md",
+      "description": "Draft sprint announcements and updates"
     }
   ],
   "intentional_mirrors": [

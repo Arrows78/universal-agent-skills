@@ -1,6 +1,6 @@
 ---
 name: prd-writer
-description: Write, review, and improve product requirements documents for product managers and cross-functional teams. Use when the user asks for a prd, product brief, product requirements, opportunity framing, product scope, success metrics, user stories, launch requirements, product decision documentation, or a stakeholder-ready product plan.
+description: Write, review, and improve product requirements documents for product managers and cross-functional teams — full-length PRDs or a lightweight one-pager. Use when the user asks for a prd, product brief, one-pager, product requirements, opportunity framing, product scope, success metrics, user stories, launch requirements, product decision documentation, or a stakeholder-ready product plan.
 ---
 
 # PRD Writer
@@ -56,6 +56,34 @@ If information is incomplete, draft the PRD anyway and label assumptions clearly
 
 Use `references/prd-template.md` for the full template and `references/review-checklist.md` when reviewing an existing PRD.
 
+## One-pager format
+
+When the user asks for a "one-pager," a lightweight PRD, or time is tight, compress to a single page instead of the full structure:
+
+```markdown
+# One-pager: [Product / Feature]
+
+**Problem** — [the customer problem and evidence]
+**Goal** — [what success looks like, one metric]
+**Non-goals** — [explicitly out of scope]
+**Solution** — [the proposed approach, 2-4 sentences]
+**Key requirements** — [3-6 bullets, Must only]
+**Risks / open questions** — [top 2-3]
+**Next step** — [decision needed or kickoff date]
+```
+
+Use the full structure instead when the initiative is large, cross-functional, or needs a durable reference; use the one-pager for fast-moving or lower-stakes decisions. See `references/prd-one-pager-examples.md` for a filled example.
+
+## Export to PDF
+
+When the user wants a designed, shareable document instead of raw Markdown — asks for "a PDF," a branded PRD, or something to send outside the tracker — render it with the bundled script instead of just returning Markdown.
+
+1. Write the PRD or one-pager as Markdown and save it to a file. Leave a blank line before every bullet or numbered list — `markdown` (the renderer) treats a list with no blank line before it as plain text.
+2. Install dependencies once: `pip install -r scripts/requirements.txt` (pure-Python, no system libraries needed).
+3. Generate the PDF: `python3 scripts/generate_pdf.py <input.md> <output.pdf>`.
+4. Branding (company name, colors, font, logo) comes from `assets/brand.json`. If it still holds the placeholder values (`"company_name": "Your Company"`), the script prints a warning — ask the user for their real company name, primary/accent color hex codes, and a logo file before treating the output as final. To add a logo, place the image inside the skill folder and set `logo_path` to its relative path.
+5. Re-run step 3 after any content or branding edit; the script is deterministic and safe to re-run.
+
 ## Requirement style
 
 Separate product requirements from implementation tasks.
@@ -78,3 +106,4 @@ Before finalizing, check that:
 - Requirements are testable.
 - Risks and dependencies are visible.
 - Open questions have owners when possible.
+- If exported to PDF, `assets/brand.json` reflects real branding, not placeholder values.
