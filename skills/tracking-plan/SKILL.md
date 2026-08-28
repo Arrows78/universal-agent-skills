@@ -68,7 +68,7 @@ The tracking plan is split into four linked databases:
 5. Produce or update the tracking plan using `references/tracking-plan-template.md`.
 6. Provide implementation notes or code snippets when requested.
 7. Add QA validation steps and lifecycle ownership.
-8. Flag stale, duplicate, ambiguous, risky, or missing tracking.
+8. Flag stale, duplicate, ambiguous, risky, or missing tracking using `references/audit-checklist.md` as the checklist for a full audit.
 
 When existing events are provided, preserve backward compatibility unless a rename is worth the migration cost. When renaming, provide a migration plan and dashboard impact notes.
 
@@ -120,7 +120,7 @@ Only include identifiers that are already available or clearly required. Avoid r
 - **PRD or spec review**: missing events, unnecessary events, naming fixes, updated analytics section.
 - **Code review**: firing conditions, required properties, duplicates, privacy issues.
 - **Notion update**: formatted rows ready to paste into Events and Event Properties databases.
-- **Audit**: keep, update, deprecate, and add recommendations with owner and status.
+- **Audit**: run `references/audit-checklist.md` against the plan; return keep, update, deprecate, and add recommendations with owner and status.
 
 ## Quality gate
 

@@ -43,13 +43,9 @@ Subject rules:
 
 If the user provides a ticket ID, issue number, or work item, include it only when it helps the team workflow.
 
-Preferred patterns:
+The footer is the canonical place for the reference — that's where automation keywords such as `Closes`, `Fixes`, and `Refs` belong. Duplicate the reference in the subject only when the team wants tickets visible in the shortlog or a squash-merge title.
 
-```text
-feat(onboarding): add setup checklist #DEV-123
-
-Refs #DEV-123
-```
+Preferred pattern (footer only):
 
 ```text
 fix(exports): escape quoted csv values
@@ -57,7 +53,13 @@ fix(exports): escape quoted csv values
 Closes #42
 ```
 
-Use `#DEV-123` into the subject as the commit convention requires it. Keep automation keywords such as `Closes`, `Fixes`, and `Refs` in the footer when possible.
+Preferred pattern (subject + footer, when tickets must stay visible in the shortlog):
+
+```text
+feat(onboarding): add setup checklist #DEV-123
+
+Refs #DEV-123
+```
 
 See `references/platform-integration.md` and `references/examples.md` when platform-specific detail or examples are needed.
 

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Tracking Plan"
+  short_description: "Create, audit, and maintain PostHog tracking plans and nomenclature."

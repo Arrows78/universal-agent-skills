@@ -37,7 +37,7 @@ Avoid starting with "what" (the ticket list). The goal is to make the reader car
 - Write in the team's working language by default.
 - Do not mention AI tools or add generated-by signatures.
 
-See `references/examples.md` for concrete examples of each message type.
+See `references/examples.md` for concrete examples of each message type and `references/sprint-templates.md` for ready-to-use, copy-paste templates (French and English) per message type.
 
 ## Output modes
 

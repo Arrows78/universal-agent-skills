@@ -1,6 +1,6 @@
 ---
 name: issue-tracker
-description: Draft and improve issue tracker entries for product management: bug reports and user stories. Use when filing bugs, documenting defects, writing reproduction steps, creating backlog items, user stories, acceptance criteria, gherkin scenarios, or preparing descriptions for product and engineering teams.
+description: Draft and improve product management issue tracker entries — bug reports, user stories, and technical tasks. Use when filing bugs, documenting defects, writing reproduction steps, creating backlog items, user stories, technical or chore tasks, acceptance criteria, gherkin scenarios, or preparing descriptions for product and engineering teams.
 ---
 
 # Issue Tracker Writer
@@ -70,6 +70,36 @@ Use `references/user-story-template.md` for the exact template and `references/e
 
 ---
 
+## Tasks
+
+### Workflow
+
+1. Identify the technical debt, maintenance need, or chore driving the task, and the affected module, file, or service.
+2. Write a short, action-oriented title naming the work to be done.
+3. Fill the description with the standard template.
+4. State the impact: what the task improves, unblocks, or prevents.
+5. Add acceptance criteria that verify existing behavior still holds after the change.
+6. Mark missing information explicitly instead of inventing details.
+
+### Language and style
+
+- Write the description in the project's working language by default.
+- Focus on technical context and impact, not the user-facing outcome (that belongs in a user story).
+- Keep headings stable so the text can be pasted into the issue tracker.
+- Use Gherkin-style acceptance criteria when appropriate: `Given`, `When`, `Then` (or localized equivalents).
+- Do not add AI signatures or generated-by footers.
+
+### Default output
+
+Return two blocks when useful:
+
+1. `Title`: a short, action-oriented summary.
+2. `Description`: the full Markdown body.
+
+Use `references/task-template.md` for the exact template and `references/examples.md` for examples.
+
+---
+
 ## Quality gate
 
 Before finalizing, check that:
@@ -82,3 +112,4 @@ Before finalizing, check that:
 - The report avoids sensitive data.
 - For user stories: actor, capability, and outcome are clear.
 - For user stories: acceptance criteria are observable and testable.
+- For tasks: the technical context, affected area, and impact are clear.

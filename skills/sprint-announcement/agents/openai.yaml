@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sprint Announcement Writer"
+  short_description: "Draft sprint updates and announcements using the Golden Circle framework."

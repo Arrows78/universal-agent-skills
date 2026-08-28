@@ -21,7 +21,7 @@ Made with Cursor
 
 ## Issue references
 
-Use the reference style that matches the platform or team. Issue reference should be visible in both the subject and the footer.
+Use the reference style that matches the platform or team. The footer is canonical — it's what automation reads — and duplicating the reference in the subject is optional, for teams that want tickets visible in the shortlog.
 
 Common patterns:
 

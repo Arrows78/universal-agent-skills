@@ -1,0 +1,3 @@
+interface:
+  display_name: "Functional Spec Writer"
+  short_description: "Write clear Markdown functional specs with Mermaid diagrams."

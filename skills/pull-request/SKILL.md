@@ -14,7 +14,7 @@ Create pull request (PR) or merge request (MR) descriptions that help reviewers 
 1. Extract the product or technical intent from user notes, ticket, diff, branch name, commit list, or issue.
 2. Separate user-facing behavior, technical changes, tests, rollout notes, and risks.
 3. Omit irrelevant sections for small changes; mark unknowns as `N/A` only when the template requires it.
-4. Use platform-appropriate issue keywords (e.g., `Closes`, `Fixes`, `Refs` for GitLab; `Closes`, `Fixes`, `Resolves` for GitHub; or your team's convention).
+4. Use a closing keyword (`Closes`, `Fixes`, `Resolves` — supported on both GitHub and GitLab) when the merge should auto-close the issue, or a plain reference (`Refs`, `Related to`) when it shouldn't; follow your team's convention if it differs.
 5. Keep the description high-signal: do not duplicate the full diff.
 6. Add reviewer-specific testing steps that can actually be followed.
 

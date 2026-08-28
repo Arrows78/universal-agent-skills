@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pull Request Writer"
+  short_description: "Build reviewer-ready pull request and merge request descriptions."
