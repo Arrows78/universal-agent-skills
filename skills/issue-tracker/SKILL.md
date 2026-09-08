@@ -48,8 +48,9 @@ Use `references/bug-report-template.md` for the exact template and `references/e
 2. Write a concise summary separately when useful.
 3. Fill the description with the standard template.
 4. Convert vague behavior into testable acceptance criteria.
-5. Add tracking, wireframes, localization, and open questions when relevant.
-6. Mark missing information explicitly instead of inventing details.
+5. Add tracking, wireframes, localization, scope boundary, linked issues, and open questions when relevant.
+6. Wireframes: one Figma link per screen or section, copied from the page or section itself (the URL carries a `node-id`), never the link of the whole file.
+7. Mark missing information explicitly instead of inventing details.
 
 ### Language and style
 
@@ -74,7 +75,7 @@ Use `references/user-story-template.md` for the exact template and `references/e
 
 ### Workflow
 
-1. Identify the technical debt, maintenance need, or chore driving the task, and the affected module, file, or service.
+1. Identify the technical debt, maintenance need, or chore driving the task, and the affected project and zone as real repository paths.
 2. Write a short, action-oriented title naming the work to be done.
 3. Fill the description with the standard template.
 4. State the impact: what the task improves, unblocks, or prevents.
@@ -113,3 +114,6 @@ Before finalizing, check that:
 - For user stories: actor, capability, and outcome are clear.
 - For user stories: acceptance criteria are observable and testable.
 - For tasks: the technical context, affected area, and impact are clear.
+- For tasks: the localization gives a project folder and a path, not a description.
+- Figma links point to a page or a section (URL with `node-id`), not to the whole file.
+- Out-of-scope items and linked issues are stated when the work is split across several issues.
