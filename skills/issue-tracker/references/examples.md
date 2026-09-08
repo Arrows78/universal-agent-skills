@@ -43,11 +43,18 @@ En tant qu'utilisateur connecté, je veux enregistrer mes préférences de notif
 - Afficher des préférences par canal : email, push, in-app.
 - Confirmer la sauvegarde après validation.
 
+🚫 **HORS SCOPE**
+- Les préférences par produit : traitées dans PROJ-457.
+
+🔗 **TICKETS LIÉS**
+- PROJ-457 : même lot, préférences par produit
+
 🔍 **TRACKING**
 - `notification_preferences_saved` - Link to the documentation
 
 🎨 **WIREFRAMES**
-- [Figma Link]
+- Page Notifications : https://www.figma.com/design/<fileKey>/<fileName>?node-id=66-2645
+- Section Confirmation : https://www.figma.com/design/<fileKey>/<fileName>?node-id=2530-25039
 
 ❓ **QUESTIONS**
 - Les préférences sont-elles globales ou par produit ? - owner: Product
@@ -71,8 +78,8 @@ En tant qu'utilisateur connecté, je veux enregistrer mes préférences de notif
 - Certaines dépendances sont obsolètes et non mises à jour.
 
 📍 **Localisation**
-- Module : `auth/`
-- Fichiers impactés : `login.tsx`, `session.ts`, `token.service.ts`
+- Projet : `front/app`
+- Zone : `front/app/src/auth/` (`login.tsx`, `session.ts`, `token.service.ts`)
 
 💥 **Impact**
 - Améliore la maintenabilité et réduit les risques de sécurité.
